@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Short entry point. All arguments are forwarded; nothing here is a simulation case.
+set -euo pipefail
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+exec python3 "$ROOT/scripts/manet.py" "$@"

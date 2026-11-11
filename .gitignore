@@ -1,0 +1,5 @@
+ns-3.45/cmake-cache/
+ns-3.45/build/
+results/.mplconfig/
+__pycache__/
+*.pyc
