@@ -1,0 +1,79 @@
+{
+  "project_title": "Performance Evaluation of AODV and DSDV Routing Protocols in Mobile Ad Hoc Networks Using NS-3",
+  "experiment_id": "AODV_n20_s20_seed12345_r1",
+  "ns3_version": "3.45",
+  "ns3_build_profile": "optimized",
+  "command": "/home/ubuntu/Downloads/projects/network-lab/ns-3.45/build/scratch/ns3.45-manet-aat-optimized --protocol=AODV --numNodes=20 --nodeSpeed=20 --nodePause=0.0 --seed=12345 --run=1 --outputDir=/home/ubuntu/Downloads/projects/network-lab/results/raw/protocol_aodv/nodes_20/speed_20/run_1 --enableAnimation=0 --overwrite=1 --areaX=500.0 --areaY=500.0 --txPowerDbm=7.5",
+  "protocol": "AODV",
+  "num_nodes": 20,
+  "area_x_m": 500,
+  "area_y_m": 500,
+  "node_speed_mps": 20,
+  "node_pause_s": 0,
+  "seed": 12345,
+  "run": 1,
+  "wifi_standard": "802.11b",
+  "phy_mode": "DsssRate11Mbps",
+  "propagation_model": "FriisPropagationLossModel",
+  "tx_power_dbm": 7.5,
+  "flows": [
+    {
+      "flow": "F1",
+      "src_node": 0,
+      "dst_node": 19,
+      "dst_port": 9000
+    },
+    {
+      "flow": "F2",
+      "src_node": 1,
+      "dst_node": 18,
+      "dst_port": 9001
+    },
+    {
+      "flow": "F3",
+      "src_node": 2,
+      "dst_node": 17,
+      "dst_port": 9002
+    }
+  ],
+  "packet_size_bytes": 512,
+  "flow_rate": "64kb/s",
+  "app_start_s": 5,
+  "app_stop_s": 60,
+  "measurement_duration_s": 55,
+  "sim_stop_s": 65,
+  "cleanup_interval_s": 5,
+  "animation_enabled": false,
+  "rng_streams": {
+    "position_allocator": 100,
+    "mobility": 200,
+    "wifi_devices": 1000,
+    "wifi_channel": 2000,
+    "aodv": 3000,
+    "dsdv_assign_streams": "not available on DsdvHelper in ns-3.45"
+  },
+  "timestamp_start_utc": "2026-10-15T18:34:44Z",
+  "timestamp_end_utc": "2026-10-15T18:34:47Z",
+  "output_files": [
+    "summary.csv",
+    "flows.csv",
+    "flowmon.xml",
+    "mobility.csv"
+  ],
+  "status": "PASS",
+  "warnings": "",
+  "exit_code": 0,
+  "wall_start_utc": "2026-10-15T18:34:44Z",
+  "wall_end_utc": "2026-10-15T18:34:47Z",
+  "cwd": "/home/ubuntu/Downloads/projects/network-lab/ns-3.45",
+  "full_command": [
+    "/home/ubuntu/Downloads/projects/network-lab/ns-3.45/ns3",
+    "run",
+    "--no-build",
+    "manet-aat --protocol=AODV --numNodes=20 --nodeSpeed=20 --nodePause=0.0 --seed=12345 --run=1 --outputDir=/home/ubuntu/Downloads/projects/network-lab/results/raw/protocol_aodv/nodes_20/speed_20/run_1 --enableAnimation=0 --overwrite=1 --areaX=500.0 --areaY=500.0 --txPowerDbm=7.5"
+  ],
+  "os": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+  "python": "3.14.4",
+  "source_sha256": "2f29b229042a47de8e0fde0f432b57a2ffb2fd702572656f8c43183acc848a86",
+  "runner_status": "PASS"
+}

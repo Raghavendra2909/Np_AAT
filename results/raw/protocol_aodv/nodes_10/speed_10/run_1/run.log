@@ -1,0 +1,35 @@
+# start_utc 2026-10-15T18:33:26Z
+# cwd /home/ubuntu/Downloads/projects/network-lab/ns-3.45
+# command /home/ubuntu/Downloads/projects/network-lab/ns-3.45/ns3 run --no-build manet-aat --protocol=AODV --numNodes=10 --nodeSpeed=10 --nodePause=0.0 --seed=12345 --run=1 --outputDir=/home/ubuntu/Downloads/projects/network-lab/results/raw/protocol_aodv/nodes_10/speed_10/run_1 --enableAnimation=0 --overwrite=1 --areaX=500.0 --areaY=500.0 --txPowerDbm=7.5
+
+=== manet-aat configuration ===
+experiment_id: AODV_n10_s10_seed12345_r1
+ns3_version: 3.45 profile=optimized
+protocol: AODV
+num_nodes: 10
+area_m: 500 x 500
+node_speed_mps: 10 pause_s: 0
+seed: 12345 run: 1
+wifi: 802.11b phy: DsssRate11Mbps propagation: FriisPropagationLossModel tx_power_dbm: 7.5
+flows: 3 UDP  64kb/s payload 512 bytes ports 9000,9001,9002
+  F1 0 -> 9 port 9000
+  F2 1 -> 8 port 9001
+  F3 2 -> 7 port 9002
+app_window_s: 5 -> 60 measurement_s: 55 sim_stop_s: 65 cleanup_s: 5
+animation: 0
+output_dir: /home/ubuntu/Downloads/projects/network-lab/results/raw/protocol_aodv/nodes_10/speed_10/run_1
+=== manet-aat metrics (UDP app flows only) ===
+selected_flows: 3
+tx_packets: 2577
+rx_packets: 2015
+tx_bytes: 1391580
+rx_bytes: 1088100
+packet_loss_packets: 562
+pdr_percent: 78.1917
+avg_delay_ms: 140.863
+throughput_kbps: 158.269
+flowmonitor_lost_packets_diagnostic: 547
+status: PASS
+
+# end_utc 2026-10-15T18:33:27Z
+# exit_code 0

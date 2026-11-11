@@ -1,0 +1,4 @@
+flow_id,selected,protocol,source_address,destination_address,source_port,destination_port,tx_packets,rx_packets,tx_bytes,rx_bytes,delay_sum_s,lost_packets
+1,1,17,10.1.1.1,10.1.1.10,49153,9000,859,472,463860,254880,44.063156100999997,379
+2,1,17,10.1.1.2,10.1.1.9,49153,9001,859,253,463860,136620,32.212156860999997,528
+3,1,17,10.1.1.3,10.1.1.8,49153,9002,859,434,463860,234360,1.7171699730000001,409
